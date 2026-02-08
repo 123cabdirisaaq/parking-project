@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Parking Management</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Parking Management</h2>
+        <input type="text" id="driverName" placeholder="Driver Name (Letters Only)">
+        <input type="text" id="carPlate" placeholder="Car Plate Number">
+        <button onclick="addParkingEntry()">Add to Slot</button>
+        <p id="parkFeedback"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Driver</th>
+                    <th>Plate</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="parkingBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

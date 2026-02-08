@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Parking Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Parking Management</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <!-- <p>Fadlan fariin noo reeb.</p> -->
+
+        <form id="contactForm">
+            <input type="text" id="conName" placeholder="Full Name" required>
+            <input type="email" id="conEmail" placeholder="Email Address" required>
+            <textarea id="conMsg" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="conFeedback" class="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

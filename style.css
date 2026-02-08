@@ -1,0 +1,127 @@
+/* 1. Global Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* 2. Professional Horizontal Header */
+nav {
+    background-color: #1a1c24;
+    /* Midab madow oo xarago leh */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    color: #00d1b2;
+    /* Midabka calaamadda */
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Links-ka jiifka ah */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #a0a5b1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #fff;
+    background-color: #00d1b2;
+}
+
+/* 3. Main Content Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* 4. Forms & Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00d1b2;
+}
+
+button {
+    padding: 12px;
+    background-color: #00d1b2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00b89c;
+}
+
+/* 5. Table Style */
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
